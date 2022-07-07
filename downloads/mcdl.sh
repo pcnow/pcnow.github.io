@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Версия Майнкрафта
-VERSION=1.16.3
+VERSION=1.19
 
 set -e
 root=$PWD
@@ -21,7 +21,11 @@ download() {
     echo Нажмите Enter, если вы не согласны.
     read -s agree_text
     echo Спасибо за согласие, Установка сейчас начнётся.
-    wget pcnow.github.io/replit-mc/mc.sh
+    wget https://download.oracle.com/java/18/latest/jdk-18_linux-x64_bin.tar.gz
+    tar -xvf jdk-18_linux-x64_bin.tar.gz
+    mv jdk-18_linux-x64_bin java
+    echo Java загружена
+    wget pcnow.github.io/downloads/mc.sh
     echo Скрипт запуска загружен
     wget "https://download.getbukkit.org/spigot/spigot-$VERSION.jar"
     mv "spigot-$VERSION.jar" server.jar

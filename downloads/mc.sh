@@ -1,3 +1,4 @@
+cd mc
 echo "Майнкрафт сервер загружается, ждите" > $root/ip.txt
 
 # start tunnel
@@ -23,5 +24,5 @@ touch logs/latest.log
 # Start minecraft
 #PATH=$PWD/jre/bin:$PATH
 echo "Сервер запущен..."
-java -Xmx1G -Xms1G -jar server.jar nogui
+../java/bin/java -Xmx1G -Xms1G -jar server.jar nogui
 echo "Код выхода $?"
