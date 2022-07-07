@@ -6,7 +6,7 @@ echo          PCNow!, 2022
 echo 
 echo Если вы хотите установить Майнкрафт сервер,
 echo нажмите STOP, скопируйте данную команду:
-echo "wget pcnow.github.io/downloads/mcdl.sh && bash mcdl.sh" (без кавычек)
+echo ""wget pcnow.github.io/downloads/mcdl.sh && bash mcdl.sh" (без кавычек)"
 echo перейдите на вкладку Shell,
 echo вставьте эту команду и нажмите Enter.
 echo Если вы хотите запустить сервер,
