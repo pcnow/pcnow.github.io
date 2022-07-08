@@ -1,5 +1,5 @@
 cd mc
-echo "Майнкрафт сервер загружается, ждите" > $root/ip.txt
+echo "Майнкрафт сервер загружается, ждите" > ../ip.txt
 
 # start tunnel
 mkdir -p ./logs
@@ -15,7 +15,7 @@ orig_server_ip=`curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0
 trimmed_server_ip=`echo $orig_server_ip | grep -o '[a-zA-Z0-9.]*\.ngrok.io[0-9:]*'`
 server_ip="${trimmed_server_ip:-$orig_server_ip}"
 echo "IP сервера: $server_ip"
-echo "Сервер запущен на: $server_ip" > $root/ip.txt
+echo "Сервер запущен на: $server_ip" > ../ip.txt
 
 touch logs/latest.log
 # Experiment: Run http server after all ports are opened
