@@ -31,6 +31,8 @@ download() {
     wget "https://download.getbukkit.org/spigot/spigot-$VERSION.jar"
     mv "spigot-$VERSION.jar" server.jar
     echo Spigot загружен
+    wget pcnow.github.io/downloads/server.properties
+    echo server.properties загружен
     wget https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar
     mkdir plugins
     mv Geyser-Spigot.jar plugins/spigot.jar
