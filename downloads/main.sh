@@ -17,12 +17,13 @@ read -n1 Keypress
 case "$Keypress" in
 
 $'1')
-echo Майнкрафт сервер загружается, ждите
+bash mc.sh
 exit
 ;;
 
 $'2')
-echo Начинается установка
+wget pcnow.github.io/downloads/mcdl.sh
+bash mcdl.sh
 ;;
 
 esac
