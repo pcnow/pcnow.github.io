@@ -18,7 +18,7 @@ download() {
     echo с лицензионным соглашением NPM, лицензионным соглашением MIT,
     echo и всеми лицензионным соглашениями, использованных в этом проекте.
     echo Нажмите Ctrl-C и удалите данный repl, если вы не согласны.
-    echo Нажмите Enter, если вы не согласны.
+    echo Нажмите Enter, если вы согласны.
     read -s agree_text
     echo Спасибо за согласие, Установка сейчас начнётся.
     wget https://download.oracle.com/java/18/latest/jdk-18_linux-x64_bin.tar.gz
