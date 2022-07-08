@@ -23,7 +23,8 @@ download() {
     echo Спасибо за согласие, Установка сейчас начнётся.
     wget https://download.oracle.com/java/18/latest/jdk-18_linux-x64_bin.tar.gz
     tar -xvf jdk-18_linux-x64_bin.tar.gz
-    mv jdk-18_linux-x64_bin java
+    rm jdk-18_linux-x64_bin.tar.gz
+    mv jdk-18.0.1.1 java
     echo Java загружена
     wget pcnow.github.io/downloads/mc.sh
     echo Скрипт запуска загружен
