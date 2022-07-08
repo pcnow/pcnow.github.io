@@ -27,6 +27,7 @@ download() {
     mv jdk-18.0.1.1 ../java
     echo Java загружена
     wget pcnow.github.io/downloads/mc.sh
+    mv mc.sh ../mc.sh
     echo Скрипт запуска загружен
     wget "https://download.getbukkit.org/spigot/spigot-$VERSION.jar"
     mv "spigot-$VERSION.jar" server.jar
